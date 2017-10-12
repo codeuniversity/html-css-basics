@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Simple CSS – Nomadcruise 2015 HTML/CSS workshop</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+  </head>
+
+  <body>
+    <main>
+      <a class="back-link" href="../index.html">« Back to menu</a>
+
+      <h1 class="page-title">Simple CSS</h1>
+
+      <section>
+        <h2>Default link</h2>
+        <a href="http://dinko.de">More at dinko.de</a>
+
+<pre>
+&lt;a href="http://dinko.de"&gt;More at dinko.de&lt;/a&gt;
+
+a {
+  color: cornflowerblue;
+}
+
+a:hover { /* hover is one of the so-called pseudo-selectors */
+  text-decoration: none;
+}
+</pre>
+      </section>
+
+      <section>
+        <h2>Paragraph style</h2>
+
+        <p>The MS Sovereign was build in St. Nazaire, France and delivered in 1998. She is registered in Malta, Valetta.
+        She has a tonnage of 73.529 and measures 268.32 meters in length and 32.20 meters in width.</p>
+        <p>The ship has a draft of 7.80 meters and can reach a maximum speed of 19 knots. The Sovereign is manned
+        by an international crew of almost 800 people from more than thirty different countries.</p>
+
+<pre>
+&lt;p&gt;The MS Sovereign was build in St. Nazaire, France and delivered in 1998. She is registered in Malta, Valetta.
+She has a tonnage of 73.529 and measures 268.32 meters in length and 32.20 meters in width.&lt;/p&gt;
+
+&lt;p&gt;The ship has a draft of 7.80 meters and can reach a maximum speed of 19 knots. The Sovereign is manned
+by an international crew of almost 800 people from more than thirty different countries.&lt;/p&gt;
+
+p {
+  font-family: Georgia, Times New Roman, serif;
+  margin: 0 0 0.7em 0;
+}
+</pre>
+      </section>
+
+      <section>
+        <h2>List style</h2>
+
+        <ul class="food-list">
+          <li>French Toast</li>
+          <li>Grilled Vegetable Risotto</li>
+          <li>Pork Chops</li>
+          <li>Sirloin Steak</li>
+          <li>Thai Curry</li>
+        </ul>
+
+<pre>
+&lt;ul class="food-list"&gt;
+  &lt;li&gt;French Toast&lt;/li&gt;
+  &lt;li&gt;Grilled Vegetable Risotto&lt;/li&gt;
+  &lt;li&gt;Pork Chops&lt;/li&gt;
+  &lt;li&gt;Sirloin Steak&lt;/li&gt;
+  &lt;li&gt;Thai Curry&lt;/li&gt;
+&lt;/ul&gt;
+  
+.food-list {
+    list-style: square;
+    padding: 0 0 0 1.5em;
+}
+
+.food-list li {
+    margin-bottom: 0.2em;
+}
+</pre>
+      </section>
+
+      <section>
+        <h2>Inline vs. inline-block vs. block</h2>
+
+        <p>Press <a class="link-inline" href>Play</a> to continue.</p>
+        <p>Press <a class="link-inline-block" href>Play</a> to continue.</p>
+        <p>Press <a class="link-block" href>Play</a> to continue.</p>
+<pre>
+&lt;p&gt;Press &lt;a class="link-inline" href&gt;Play&lt;/a&gt; to continue.&lt;/p&gt;
+&lt;p&gt;Press &lt;a class="link-inline-block" href&gt;Play&lt;/a&gt; to continue.&lt;/p&gt;
+&lt;p&gt;Press &lt;a class="link-block" href&gt;Play&lt;/a&gt; to continue.&lt;/p&gt;
+
+.link-inline {
+    display: inline;
+    width: 300px; /* some properties like top/bottom margin, width, height are not functional in inline elements */
+    border: 1px solid #ccc;
+    background-color: #f7f7f7;
+}
+
+.link-inline-block {
+    display: inline-block;
+    width: 300px;
+    border: 1px solid #ccc;
+    background-color: #f7f7f7;
+    text-align: center;
+}
+
+.link-block {
+    display: block;
+    width: 300px;
+    border: 1px solid #ccc;
+    background-color: #f7f7f7;
+    text-align: center;
+}
+</pre>
+      </section>
+
+      <a class="back-link" href="../index.html">« Back to menu</a>
+
+    </main>
+  </body>
+
+</html>

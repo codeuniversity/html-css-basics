@@ -1,0 +1,160 @@
+main {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 12px 13px;
+}
+
+main.content-index {
+    text-align: center;
+}
+
+
+a {
+    color: cornflowerblue;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+p {
+    font-family: Georgia, Times New Roman, serif;
+    margin: 0 0 0.7em 0;
+}
+
+pre {
+    padding: 0.5em;
+    background-color: #f7f7f7;
+}
+
+em {
+    font-weight: bold;
+    font-style: normal;
+}
+
+section {
+    margin-bottom: 5em;
+}
+
+.page-title {
+    margin-bottom: 2em;
+}
+
+.btn-link {
+    display: block;
+    /*width: 50%;*/
+    margin: 13px 0;
+    padding: 13px 21px;
+    border-radius: 5px;
+    border: 1px solid cornflowerblue;
+    color: cornflowerblue;
+    text-align: center;
+    text-decoration: none;
+}
+
+.btn-link:hover {
+    background-color: #f7f7f7;
+}
+
+.link-inline {
+    display: inline;
+    width: 300px; /* some properties like top/bottom margin, width, height are not functional in inline elements */
+    border: 1px solid #ccc;
+    background-color: #f7f7f7;
+}
+
+.link-inline-block {
+    display: inline-block;
+    width: 300px;
+    border: 1px solid #ccc;
+    background-color: #f7f7f7;
+    text-align: center;
+}
+
+.link-block {
+    display: block;
+    width: 300px;
+    border: 1px solid #ccc;
+    background-color: #f7f7f7;
+    text-align: center;
+}
+
+.article-main-image {
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    border: 15px solid #a2c5c9;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.article-main-image img {
+    width: 600px;
+    margin: 0 0 0 -100px;
+}
+
+.attributes-table {
+    width: 100%;
+}
+
+.attributes-table th,
+.attributes-table td {
+    padding: 13px;
+    vertical-align: top;
+    border: 1px solid #ccc;
+}
+
+.attributes-table th {
+    background-color: #f7f7f7;
+}
+
+.attributes-table td {
+    border: 1px solid #ccc;
+}
+
+.attributes-table tr:nth-child(odd) td {
+    background-color: #f1fff4;
+}
+
+.food-list {
+    list-style: square;
+    padding: 0 0 0 1.5em;
+}
+
+.food-list li {
+    margin-bottom: 0.2em;
+}
+
+.tab-navigation {
+    border-bottom: 1px solid #ccc;
+}
+
+.tab-navigation > a {
+    display: inline-block;
+    position: relative;
+    top: 1px;
+    padding: 13px 21px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    margin-right: 13px;
+}
+
+.tab-navigation > a.active {
+    background-color: #fff;
+    border-bottom-color: #fff;
+}
+
+.image-grid:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.image-grid-element {
+    float: left;
+    width: 33.3333333%;
+}
+
+.image-grid-element img {
+    width: 100%;
+}

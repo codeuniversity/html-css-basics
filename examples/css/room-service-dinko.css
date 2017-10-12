@@ -1,0 +1,52 @@
+.content {
+    max-width: 640px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: "Georgia", "Times New Roman", sans-serif;
+}
+
+h1 {
+    font-size: 3em;
+    text-transform: uppercase;
+}
+
+.food-category {
+    margin: 0 0 55px 0;
+}
+
+.food-category h2 {
+    margin-bottom: 13px;
+    padding-bottom: 8px;
+    font-size: 2em;
+    text-transform: uppercase;
+    border-bottom: 10px double #e5e5e5;
+}
+
+.food-category ul {
+    list-style: none;
+}
+
+.food-category ul li {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.food-category .currency {
+    font-size: 18px;
+    margin-left: 0.5em;
+}
+
+.food-category .price {
+    font-size: 22px;
+}
+
+.food-category .dish-description {
+    margin: 0;
+    font-size: 0.8em;
+    font-style: italic;
+}
+
+footer .order-info,
+footer .billing-info {
+    font-size: 0.8em;
+}

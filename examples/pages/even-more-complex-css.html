@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Even more complex CSS – Nomadcruise 2015 HTML/CSS workshop</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <style type="text/css">
+      .link {
+        color: green;
+      }
+
+      #link-1 {
+        font-size: 30px;
+        color: lightgreen;
+      }
+
+      .intro .link {
+        margin: 0 0 0 20px;
+      }
+
+      .intro > .link {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <a class="back-link" href="../index.html">« Back to menu</a>
+
+      <h1 class="page-title">Even more complex CSS</h1>
+
+      <section>
+        <h2>Default link</h2>
+        <a href="http://dinko.de">More at dinko.de</a>
+<pre>
+&lt;a href="http://dinko.de">More at dinko.de&lt;/a&gt;</pre>
+      </section>
+
+      <section>
+        <h2>Default link with class .link</h2>
+        <a href="http://dinko.de" class="link">More at dinko.de</a>
+<pre>
+&lt;a href="http://dinko.de" class="link">More at dinko.de&lt;/a&gt;
+
+
+.link {
+  color: green;
+}
+</pre>
+      </section>
+
+      <section>
+        <h2>Default link with class .link and id #link-1</h2>
+        <a href="http://dinko.de" class="link" id="link-1">More at dinko.de</a>
+<pre>
+&lt;a href="http://dinko.de" class="link" id="link-1">More at dinko.de&lt;/a&gt;
+
+.link {
+  color: green;
+}
+
+#link-1 {
+  font-size: 30px;
+  color: lightgreen;
+}
+</pre>
+      </section>
+
+      <section>
+        <h2>Default link with class .link, nested in p.intro</h2>
+        <p class="intro">
+          <a href="http://dinko.de" class="link">
+            More at dinko.de</a>
+        </p>
+<pre>
+&lt;p class="intro"&gt;
+  &lt;a href="http://dinko.de" class="link"&gt;More at dinko.de&lt;/a&gt;
+&lt;/p&gt;
+
+.link {
+  color: green;
+}
+
+#link-1 {
+  font-size: 30px;
+}
+
+.intro .link {
+  margin: 0 0 0 20px;
+}
+</pre>
+      </section>
+
+      <section>
+        <h2>Image style</h2>
+
+        <figure class="article-main-image">
+          <img src="../images/sovereign-1.jpg">
+        </figure>
+<pre>
+&lt;figure class="article-main-image"&gt;
+  &lt;img src="../images/sovereign-1.jpg"&gt;
+&lt;/figure&gt;
+
+.article-main-image {
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    border: 15px solid #a2c5c9;
+    border-radius: 50%;
+}
+
+.article-main-image img {
+    width: 600px;
+    margin: 0 0 0 -100px;
+}
+</pre>
+      </section>
+
+      <a class="back-link" href="../index.html">« Back to menu</a>
+    </main>
+  </body>
+
+</html>

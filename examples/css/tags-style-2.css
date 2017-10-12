@@ -1,0 +1,135 @@
+html {
+    font-family: Gill Sans, Verdana, sans-serif;
+    font-size: 130%;
+}
+
+body {
+    color: #fff;
+    background-color: #433966;
+}
+
+main {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2em 1em;
+}
+
+.page-title {
+    padding-bottom: 0.3em;
+    background-color: transparent;
+    text-align: center;
+}
+
+section {
+    margin-bottom: 5em;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    background-color: rgba(255,255,255,.2);
+    padding: 0.2em 0.2em 0.2em 0.5em;
+    border-radius: 30px 30px 0 0;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+h2 {
+    font-size: 44px;
+}
+
+h3 {
+    font-size: 36px;
+}
+
+h4 {
+    font-size: 24px;
+}
+
+h5 {
+    font-size: 18px;
+}
+
+h6 {
+    font-size: 16px;
+}
+
+a {
+    color: #ffff00;
+}
+
+p {
+    font-family: Georgia, Times New Roman, serif;
+    margin: 0 0 1em 0;
+}
+
+ul {
+    list-style: disc;
+    padding: 0 0 0 1em;
+}
+
+ul li,
+ol li {
+    margin-bottom: 0.5em;
+}
+
+ol {
+    list-style: lower-roman;
+    padding: 0 0 0 1.5em;
+}
+
+table {
+    width: 100%;
+}
+
+table th {
+    background-color: rgba(255,255,255,.7);
+    color: #333;
+}
+
+table td {
+    padding: 5px;
+    text-align: left;
+}
+
+table th,
+table td {
+    border: 1px solid #ccc;
+}
+
+img {
+    width: 100%;
+    margin: 0 0 30px 0;
+    border: 20px solid #c0b47a;
+    border-radius: 10px;
+}
+
+form {
+    width: 50%;
+}
+
+.form-group {
+    margin-bottom: 1em;
+}
+
+label {
+    font-weight: bold;
+    color: whitesmoke;
+}
+
+input {
+    width: 100%;
+    padding: 13px 21px;
+    color: #000;
+}
+
+button {
+    padding: 13px 21px;
+    color: #000;
+    background-color: #ffff00;
+    border: none;
+    border-radius: 15px;
+}

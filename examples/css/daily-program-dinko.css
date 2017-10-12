@@ -1,0 +1,189 @@
+html {
+    font-family: "Century Gothic", Verdana, sans-serif;
+    background-color: rgb(250, 255, 251); /* just a slight background */
+}
+
+/* Declaring all headlines */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 0.7em 0;
+    font-family: "Gill Sans", Verdana, sans-serif;
+}
+
+h1 {
+    font-size: 2.4em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.8em;
+}
+
+h4 {
+    font-size: 1.6em;
+}
+
+h5 {
+    font-size: 1.3em;
+}
+
+h6 {
+    font-size: 1em;
+}
+
+section {
+    margin: 34px 0 21px 0;
+    padding-bottom: 21px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+table {
+    width: 100%;
+}
+
+table td {
+    padding: 5px 8px;
+}
+
+.layout-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    border: 13px solid #c9efd2;
+}
+
+.page-header {
+    position: relative; /* We need relative here, because within the container there will be absolutely positioned elements. */
+    height: 480px;
+    background: #f9f9f9 url('../images/sovereign-3.jpg') no-repeat center center;
+    background-size: 100%; /* the background should fill the whole container, any overflow will be clipped */
+    border-bottom: 21px solid #c9efd2;
+}
+
+/* The header typography has some shared attributes, so we can group them */
+.page-header-title,
+.page-header-date,
+.page-header-subtitle {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    padding: 0.3em 1.3em;
+    font-family: "Gill Sans", Verdana, sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: rgba(255,255,255,.8);
+}
+
+.page-header-title {
+    left: -13px;
+    top: 55px;
+}
+
+.page-header-subtitle {
+    left: -13px;
+    top: 130px;
+    font-size: 1.7em;
+}
+
+.page-header-date {
+    right: -13px;
+    top: 55px;
+    font-size: 1.4em;
+}
+
+.content {
+    position: relative;
+    background-color: #fff;
+}
+
+/*
+This is the background of the sidebar. The :before pseudo selector is used to add another container.
+We want that background to fill the whole height of the .content container. If we put the background on .col-1,
+it will only be as high as the text height there, leaving whitespace below.
+*/
+.content:before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    right: 0;
+    width: 33.333333%;
+    height: 100%;
+    background-color: #fff3ec;
+}
+
+.content:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* simple two column floating layout*/
+.col-1 {
+    float: left;
+    width: 66.666666%;
+    height: 100%;
+    padding: 13px 21px;
+}
+
+/* We want the title to has a stripe-like look */
+.col-1 .section-title {
+    position: relative;
+    left: -21px;
+    display: inline-block;
+    background-color: #c9efd2;
+    padding: 5px 21px 5px 21px;
+}
+
+.col-1 section img {
+    width: 100%;
+    margin: 13px 0;
+}
+
+.col-2 {
+    position: relative;
+    float: right;
+    width: 33.333333%;
+    height: 100%;
+    padding: 13px 21px;
+}
+
+.col-2 section {
+    border-bottom: none;
+}
+
+.col-2 .section-title {
+    text-align: center;
+}
+
+/* We want the icons to be a bit different */
+.col-2 .section-title .fa {
+    position: relative;
+    top: -2px;
+    opacity: .1;
+    font-size: 75%;
+}
+
+.bridge-message {
+    text-align: center;
+}
+
+.bridge-message-main {
+    font-size: 2em;
+}
+
+.picture-of-the-day figure {
+    text-align: center;
+}
+
+.picture-of-the-day figure figcaption {
+    font-style: italic;
+    font-size: 0.8em;
+}

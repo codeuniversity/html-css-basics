@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>More complex CSS – Nomadcruise 2015 HTML/CSS workshop</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+  </head>
+
+  <body>
+    <main>
+      <a class="back-link" href="../index.html">« Back to menu</a>
+
+      <h1 class="page-title">More complex CSS</h1>
+
+      <section>
+        <h2>Floating elements</h2>
+
+        <div class="image-grid">
+          <div class="image-grid-element">
+            <img src="../images/sovereign-1.jpg">
+          </div>
+          <div class="image-grid-element">
+            <img src="../images/sovereign-2.jpg">
+          </div>
+          <div class="image-grid-element">
+            <img src="../images/sovereign-3.jpg">
+          </div>
+        </div>
+<pre>
+&lt;div class="image-grid"&gt;
+  &lt;div class="image-grid-element"&gt;
+    &lt;img src="../images/sovereign-1.jpg"&gt;
+  &lt;/div&gt;
+  &lt;div class="image-grid-element"&gt;
+    &lt;img src="../images/sovereign-2.jpg"&gt;
+  &lt;/div&gt;
+  &lt;div class="image-grid-element"&gt;
+    &lt;img src="../images/sovereign-3.jpg"&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+.image-grid-element {
+    float: left;
+    width: 33.3333333%;
+}
+
+.image-grid-element img {
+    width: 100%;
+}
+</pre>
+      </section>
+
+      <section>
+        <h2>Tab navigation</h2>
+
+        <nav class="tab-navigation">
+          <a href="" class="active">Home</a>
+          <a href="">Our ships</a>
+          <a href="">Meet the crew</a>
+        </nav>
+
+<pre>
+&lt;nav class="tab-navigation"&gt;
+  &lt;a href="" class="active"&gt;Home&lt;/a&gt;
+  &lt;a href=""&gt;Our ships&lt;/a&gt;
+  &lt;a href=""&gt;Meet the crew&lt;/a&gt;
+&lt;/nav&gt;
+
+.tab-navigation {
+    border-bottom: 1px solid #ccc;
+}
+
+.tab-navigation > a {
+    display: inline-block;
+    position: relative;
+    top: 1px;
+    padding: 13px 21px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    margin-right: 13px;
+}
+
+.tab-navigation > a.active {
+    background-color: #fff;
+    border-bottom-color: #fff;
+}
+</pre>
+      </section>
+
+      <a class="back-link" href="../index.html">« Back to menu</a>
+
+    </main>
+  </body>
+
+</html>
